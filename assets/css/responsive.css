@@ -1,0 +1,78 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+   html {
+      scroll-behavior: smooth;
+   }
+   .hide-on-mobile-tablet {
+      display: none;
+   }
+   .discover {
+      flex-direction: column;
+   }
+   .destinations__search-wrap_2 {
+      background-color: rgba(255, 255, 255, 0.8);
+   }
+   .destinations__more {
+      margin-bottom: 30px;
+   }
+   .destinations__search_2 {
+      min-height: 670px;
+   }
+   .destinations__search_2-img {
+      min-height: 800px;
+   }
+   .destinations__news {
+      min-height: 290px;
+      margin: 0 20px 0;
+   }
+   .destinations__news-details {
+      margin: 20px 20px 0;
+   }
+   .header__nav {
+      height: var(--header-height);
+      flex-direction: column;
+      justify-content: center;
+   }
+   #nav-mobile-input:checked ~ .mobile__nav {
+      transform: translateX(0);
+   }
+   #nav-mobile-input:checked ~ .overlay {
+      display: block ;
+   }
+   .nav-mobile-bar-wrap {
+      display: block;
+   }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+   .destinations__search-wrap_2 {
+      width: 640px;
+   }
+   .destinations__news {
+      height: 400px;
+   }
+}
+/* Mobile */
+@media (max-width: 739px) {
+   .discover__text {
+      font-size: 2rem;
+   }
+   .discover__btn  {
+      font-size: 1.2rem;
+   }
+   .destinations__search-wrap_2 {
+      width: 360px;
+   }
+   .destinations__option {
+      margin: 0 20px 0;
+   }
+   .license {
+      margin: 0 20px;
+   }
+   .footer__bottom-copy-right {
+      padding: 0 20px;
+   }
+   .mobile__nav {
+      width: 250px;
+   }
+}

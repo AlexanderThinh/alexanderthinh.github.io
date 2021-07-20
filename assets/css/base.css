@@ -1,0 +1,49 @@
+:root {
+   --primary-color: #14B9D5;
+
+   --header-height: 120px;
+   --header__contact-height: 40px;
+   --header__nav-height: calc( (var(--header-height) - (var(--header__contact-height))) )
+}
+* {
+   box-sizing: inherit;
+}
+html {
+   scroll-behavior: smooth;
+   font-size: 62.5%;
+   line-height: 1.6rem;
+   font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+}
+/* Animation FadeIN */
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+   } to {
+       opacity: 1;
+   }
+}
+/* Animation zoom */
+@keyframes grow {
+   from {
+       opacity: 0;
+       transform: scale(0);
+   } to {
+       opacity: 1;
+       transform: scale(1);
+   }
+}
+.primary-btn {
+   cursor: pointer;
+   border: none;
+   background-color: #14B9D5;
+   border-radius: 20px;
+   min-width: 120px;
+   text-align: center;
+   box-shadow: 0 1px 2px #ccc;
+   color: white;
+   padding: 10px;
+}
+.primary-btn:hover {
+   opacity: 0.9;
+}
