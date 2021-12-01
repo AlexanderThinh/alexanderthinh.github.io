@@ -1,0 +1,52 @@
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+   html {
+      scroll-behavior: smooth;
+   }
+   .hide-on-mobile-tablet {
+      display: none;
+   }
+   .header__nav {
+      height: var(--header-height);
+      flex-direction: column;
+      justify-content: center;
+   }
+   #nav-mobile-input:checked ~ .mobile__nav {
+      transform: translateX(0);
+   }
+   #nav-mobile-input:checked ~ .overlay {
+      display: block ;
+   }
+   .nav-mobile-bar-wrap {
+      display: block;
+   }
+   .search__content-wrap {
+      background-color: rgba(255, 255, 255, 0.6);
+   }
+
+   .search__more-option-wrap {
+      flex-direction: column;
+   }
+}
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+   
+}
+/* Mobile */
+@media (max-width: 739px) {
+   .license {
+      margin: 0 20px;
+   }
+   .footer__bottom-copy-right {
+      padding: 0 20px;
+   }
+   .mobile__nav {
+      width: 250px;
+   }
+   
+   .search,
+   .product-wrap {
+      padding: 0 20px;
+   }
+
+}
